@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  line-height: 1.5em;
+}
+
+.hero {
+  background-color: rgba(41, 0, 12, 0.5) !important;
+  color: #e4dbce;
+  font-family: Roboto, sans-serif;
+  width: 100%;
+  padding: 6em 0;
+  background-image: url(images/sax-river-street-jazz-cafe.jpg);
+  background-blend-mode: color;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero-content__text {
+  width: 70%;
+  max-width: 900px;
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
