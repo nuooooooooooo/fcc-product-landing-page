@@ -11,7 +11,22 @@
     <title>Solmer</title>
   </head>
   <body>
-    <header class="hero">
+    <header class="page-header"id="header">
+      <nav id="nav-bar" class="nav-bar">
+        <div class="company-container">
+          <img src="images/LogoMakr_426Bqt.png" class="company-logo" id="header-img" alt="The logo of Solmer is a saxophone"
+          />
+            <a class="company-container__name" href="#">Solmer.</a>
+          </div>
+        </div>
+        <div class="border link-container">
+          <a href="#Home" class="nav-link">Home</a>
+          <a href="#Features" class="nav-link">Features</a>
+          <a href="#Pricing" class="nav-link">Pricing</a>
+        </div>
+      </nav>
+    </header>
+    <section class="hero">
       <div class="hero-img">
         <div class="hero-content">
           <div class="hero-content__text">
@@ -22,6 +37,31 @@
           </div>
         </div>
       </div>
-    </header>
+    </section>
+    <section class="features">
+      <div class="container">
+        <div class="left-col"></div>
+        <div class="right-col"><video id="video" src="#"></video></div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="three-col">
+          <div class="about-us"></div>
+          <div class="newsletter">
+            <form action="https://www.freecodecamp.com/email-submit">
+              <label for="email">Newsletter</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Write your email here"
+              />
+              <input type="submit" id="submit" value="Send" accesskey="s" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
