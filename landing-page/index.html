@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Solmer</title>
+  </head>
+  <body>
+    <header id="s1" class="page-header" id="header"></header>
+    <nav id="nav-bar" class="nav-bar">
+      <div class="company-info grid-one">
+        <img
+          src="images/LogoMakr_426Bqt.png"
+          class="company-info__logo"
+          id="header-img"
+          alt="The logo of Solmer is a saxophone"
+        />
+        <a class="company-info__name" id="Home" href="#">Solmer.</a>
+      </div>
+
+      <label for="hamburger" class="grid-two"> &#9776; </label>
+      <input type="checkbox" id="hamburger" />
+      <ul class="hamburger-menu grid-three">
+        <li class="hamburger-menu__item">
+          <a href="#s1" class="nav-link">Home</a>
+        </li>
+        <li class="hamburger-menu__item">
+          <a href="#s2" class="nav-link">Features</a>
+        </li>
+        <li class="hamburger-menu__item">
+          <a href="#s3" class="nav-link">Our Products</a>
+        </li>
+      </ul>
+    </nav>
+    <section id="s1" class="hero">
+      <div class="hero-img">
+        <div class="hero-content">
+          <div class="hero-content__text">
+            <h1>Solmer. Love Music</h1>
+            <p>
+              The leader in high quality saxophones
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+      <section id="s2" class="features">
+        <div class="container">
+          <div class="left-col">
+            <h2 id="Features">Rich sound</h2>
+            <p>
+              In classic and jazz, our saxophones provide you with sound power
+              and wide dynamic range, making them the instrument of choice for
+              professionals.
+            </p>
+            <h2>Fine Craftsmanship</h2>
+            <p>
+              We consider ourselves as artisans and strive to provide you with
+              the saxophone caters to all your needs. All our saxophones are
+              unique and we provide a large array of accessories to personalize
+              your saxophone so it best suits your needs.
+            </p>
+            <h2>Sleek Aesthetic</h2>
+            <p>
+              Our saxophones are all gold lacker engraved, giving them a unique
+              look that is recognized by anyone in the music field.
+            </p>
+          </div>
+          <div class="right-col">
+            <div class="iframe-container">
+              <iframe
+                id="video"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/OaAvPOBBxzU?controls=0"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="s3" class="price-grid">
+        <h2>Our Products</h2>
+        <div class="price-grid-one card">
+          <img class="card__img" src="images/kindpng_521804.png" alt="" />
+          <div class="wrapper">
+            <h3>Alto SX-350</h3>
+            <p>3500€</p>
+          </div>
+          <button class="card__btn">Add to cart</button>
+        </div>
+        <div class="price-grid-two card">
+          <img class="card__img" src="images/case.jpg" alt="" />
+          <div class="wrapper">
+            <h3>SX Series Case</h3>
+            <p>250€</p>
+          </div>
+          <button class="card__btn">Add to cart</button>
+        </div>
+        <div class="price-grid-three card">
+          <img class="card__img" src="images/mouthpiece.png" alt="" />
+
+          <div class="wrapper">
+            <h3>Mouthpiece</h3>
+            <p>350€</p>
+          </div>
+          <button class="card__btn">Add to cart</button>
+        </div>
+        <div class="price-grid-four card">
+          <img class="card__img" src="images/reed.jpg"" alt="" />
+          <div class="wrapper">
+            <h3>Tenor Sax Reed</h3>
+            <p>25€</p>
+          </div>
+          <button class="card__btn">Add to cart</button>
+        </div>
+        <div class="price-grid-five card">
+          <img class="card__img" src="images/shoulder-strap.png" alt="" />
+          <div class="wrapper">
+            <h3>LightTech&#8482; Shoulder strap</h3>
+            <p>50€</p>
+          </div>
+          <button class="card__btn">Add to cart</button>
+        </div>
+        <div class="price-grid-six card">
+          <img class="card__img" src="images/cleaning-cloth.jpg" alt="" />
+          <div class="wrapper">
+            <h3>CleanTech&#8482; Cleaning Cloth</h3>
+            <p>15€</p>
+          </div>
+          <button class="card__btn">Add to cart</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="three-col">
+          <div class="about-us">
+            <h3>About Us</h3>
+            <p>
+              We're a fake saxophone company that was totally made up for a
+              FreeCodeCamp.org product landing project. Our brand name was
+              inspired by famous saxophone brand Selmer.
+            </p>
+          </div>
+          <div class="newsletter">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+              <label for="email"> <h3>Newsletter</h3> </label>
+              <div class="newsl-container">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Write your email here"
+                />
+                <button class="form-btn" type="reset">
+                  <input
+                    class="form-btn__content"
+                    type="submit"
+                    id="submit"
+                    value="&#187;"
+                  />
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="social">
+            <h3>
+              Follow Us
+            </h3>
+          </div>
+        </div>
+        <p>Coded by <a href="" target="_blank">Manon</a></p>
+      </div>
+    </footer>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  </body>
+</html>
