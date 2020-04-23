@@ -2,8 +2,11 @@
 have to use @media
 use flexbox */
 
+/* General settings */
+
 html {
   box-sizing: border-box;
+  scroll-padding-top: 70px;
 }
 
 *,
@@ -15,51 +18,78 @@ html {
 }
 
 body {
-  line-height: 1.5em;
+  line-height: 1.5rem;
   font-family: Roboto, sans-serif;
+  background-color: #f1f1f1;
 }
 
-.page-header {
-  background-color: #661100;
-  padding: 1em 0;
-  width: 100%;
+/* Typography */
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1em;
+  color: #78244c;
 }
+
+/* Navbar */
+
 .nav-bar {
-  width: 90%;
-  margin: 0 auto;
+  background-color: #59253a;
+  box-shadow: 0px 0px 5px 3px rgba(63, 63, 63, 0.212);
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.company-container {
+.company-info {
   display: flex;
   align-items: center;
+  padding: 1em;
 }
 
-.company-logo {
+.company-info__logo {
   max-width: 50px;
+  color: #f1f1f1 !important;
+  opacity: 0.9;
 }
 
-.company-container__name {
+.company-info__name {
   text-decoration: none;
-  color: #fff;
+  color: #f1f1f1;
   font-size: 2rem;
   font-weight: 700;
   margin-left: 0.4em;
 }
 
+/* Navbar: hamburger menu */
+
+.nav-bar label,
+#hamburger {
+  display: none;
+}
+
+.hamburger-menu__item {
+  list-style-type: none;
+  display: inline-block;
+}
+
 .nav-link {
-  color: #fff;
+  color: #f1f1f1;
   text-decoration: none;
   font-size: 1.2rem;
-  margin-left: 1em;
+  padding: 0 2em 0 0;
 }
+
+/* Hero */
 
 .hero {
   background-color: rgba(41, 0, 12, 0.5) !important;
-  color: #e4dbce;
-
+  color: #f1f1f1;
   width: 100%;
   padding: 8em 0;
   background-image: url(images/sax-river-street-jazz-cafe.jpg);
@@ -79,12 +109,210 @@ body {
 }
 
 .hero h1 {
-  font-size: 4.5rem;
-  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1em;
+  font-weight: 700;
   margin-bottom: 0.5em;
 }
 
 .hero p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 400;
+}
+
+/* Main content */
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 950px;
+}
+
+.left-col {
+  margin-top: 2em;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.left-col p {
+  margin: 2em;
+}
+
+.right-col {
+  margin-top: 2em;
+}
+
+.iframe-container {
+  /* matches size of 16:9 video, 9 divided by sixteen equals the number below */
+  padding-top: 56.25%;
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 0px 0px 5px 2px rgba(63, 63, 63, 0.137);
+}
+
+iframe {
+  display: block;
+  position: absolute;
+  border-radius: 5px;
+  width: 100%;
+  top: 0;
+  height: 100%;
+}
+
+/* Price Grid */
+
+.price-grid {
+  padding-top: 2em;
+  display: grid;
+  grid-gap: 2em;
+}
+
+.card {
+  max-width: 450px;
+  display: grid;
+  grid-row-gap: 1.5em;
+  grid-template-columns: 50% 50%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 2em;
+  box-shadow: 0px 0px 5px 2px rgba(63, 63, 63, 0.137);
+  position: relative;
+}
+
+.card:hover::before {
+  content: "";
+  border-top: 3px solid #78244c;
+  width: 100%;
+  position: absolute;
+}
+
+.card__img {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+  grid-column: 1/3;
+}
+
+.card h3 {
+  color: #78244c;
+}
+
+.card__btn {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #59253a;
+  border: none;
+  justify-self: end;
+  padding: 1em 2em;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px rgba(63, 63, 63, 0.137);
+  transition: all 200ms ease-in-out;
+}
+
+.card__btn:hover {
+  cursor: pointer;
+  background-color: rgba(94, 45, 64, 0.918);
+}
+
+.footer {
+  margin-top: 2em;
+  background-color: #59253a;
+  color: #f1f1f1;
+  box-shadow: 0px 0px 5px 2px rgba(63, 63, 63, 0.137);
+}
+
+.container {
+  padding: 1em;
+  margin: 0 auto;
+}
+
+.footer h3 {
+  font-size: 1.2rem;
+  margin: 1em 0;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.newsl-container {
+  /* border: 1px solid red; */
+  display: flex;
+}
+
+#email {
+  font-family: Roboto, sans-serif;
+  display: inline-block;
+  padding: 0.4em 1.5em;
+  text-align: center;
+  border: none;
+}
+
+.form-btn {
+  border: none;
+}
+
+.form-btn__content {
+  font-family: Roboto, sans-serif;
+  padding: 0.2em 0.5em;
+  background-color: #f1f1f1;
+  border: none;
+  color: #59253a;
+  font-size: 2em;
+  transition: all 200ms ease-out;
+}
+
+.form-btn__content:hover {
+  background-color: #3574af;
+  color: #f1f1f1;
+}
+
+/* Small screens */
+
+@media screen and (max-width: 650px) {
+  html {
+    scroll-padding-top: 300px;
+  }
+
+  .nav-bar {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+  }
+
+  .grid-three {
+    grid-column: 1/3;
+  }
+
+  .nav-bar label {
+    display: inline-block;
+    background-color: #f1f1f1;
+    color: #59253a;
+    font-size: 1.5rem;
+    padding: 1.2em;
+  }
+
+  .hamburger-menu__item {
+    display: block;
+    padding: 1.5em 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.13);
+    transition: all 0.5s ease-out;
+  }
+  .hamburger-menu__item:hover {
+    background-color: #5e2d40;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+
+  .nav-bar input:checked ~ .hamburger-menu {
+    display: block;
+  }
+
+  .nav-link {
+    padding: 0;
+  }
 }
