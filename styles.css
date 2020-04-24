@@ -26,10 +26,15 @@ body {
 /* Typography */
 
 h2 {
-  text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 1em;
   color: #78244c;
+}
+
+.our-products {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+  padding-top: 2em;
 }
 
 /* Navbar */
@@ -53,7 +58,7 @@ h2 {
 }
 
 .company-info__logo {
-  max-width: 50px;
+  max-width: 40px;
   color: #f1f1f1 !important;
   opacity: 0.9;
 }
@@ -125,17 +130,17 @@ h2 {
 main {
   width: 80%;
   margin: 0 auto;
-  max-width: 950px;
+  max-width: 1000px;
 }
 
 .left-col {
   margin-top: 2em;
-  padding: 1em 0;
+  padding-top: 1em;
   text-align: center;
 }
 
 .left-col p {
-  margin: 2em;
+  margin-top: 2em;
 }
 
 .right-col {
@@ -164,13 +169,13 @@ iframe {
 .price-grid {
   padding-top: 2em;
   display: grid;
-  grid-gap: 2em;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
 }
 
 .card {
-  max-width: 450px;
   display: grid;
-  grid-row-gap: 1.5em;
+  grid-gap: 0.5em;
   grid-template-columns: 50% 50%;
   background-color: #fff;
   border-radius: 5px;
@@ -203,17 +208,22 @@ iframe {
   text-transform: uppercase;
   background-color: #59253a;
   border: none;
+  align-self: center;
   justify-self: end;
-  padding: 1em 2em;
+  font-size: 0.8rem;
+  padding: 1em 1.5em;
   border-radius: 5px;
   box-shadow: 0px 0px 5px 2px rgba(63, 63, 63, 0.137);
   transition: all 200ms ease-in-out;
+  position: relative;
 }
 
 .card__btn:hover {
   cursor: pointer;
   background-color: rgba(94, 45, 64, 0.918);
 }
+
+/* footer */
 
 .footer {
   margin-top: 2em;
@@ -222,9 +232,14 @@ iframe {
   box-shadow: 0px 0px 5px 2px rgba(63, 63, 63, 0.137);
 }
 
-.container {
+.three-col {
   padding: 1em;
+  width: 90%;
   margin: 0 auto;
+}
+
+.three-col--margin {
+  margin: 2em 0;
 }
 
 .footer h3 {
@@ -239,14 +254,13 @@ iframe {
 }
 
 .newsl-container {
-  /* border: 1px solid red; */
   display: flex;
 }
 
 #email {
   font-family: Roboto, sans-serif;
   display: inline-block;
-  padding: 0.4em 1.5em;
+  width: 80%;
   text-align: center;
   border: none;
 }
@@ -270,6 +284,42 @@ iframe {
   color: #f1f1f1;
 }
 
+.icon-container .icon {
+  font-size: 1.5rem;
+  padding-right: 1.02em;
+  margin-bottom: 1em;
+}
+
+.icon:hover {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.page-author {
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.page-author a {
+  position: relative;
+}
+
+.page-author a::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 2px solid white;
+  transform: scale(0, 1);
+  transition: all 200ms ease-in-out;
+}
+
+.page-author a:hover::after {
+  transform: scale(1, 1);
+}
+
 /* Small screens */
 
 @media screen and (max-width: 650px) {
@@ -279,7 +329,11 @@ iframe {
 
   .nav-bar {
     display: grid;
-    grid-template-columns: 6fr 1fr;
+    grid-template-columns: 9fr 1fr;
+  }
+
+  .grid-two {
+    justify-self: end;
   }
 
   .grid-three {
@@ -287,11 +341,12 @@ iframe {
   }
 
   .nav-bar label {
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     background-color: #f1f1f1;
     color: #59253a;
     font-size: 1.5rem;
-    padding: 1.2em;
+    padding: 1em;
   }
 
   .hamburger-menu__item {
@@ -314,5 +369,32 @@ iframe {
 
   .nav-link {
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .left-col {
+    width: 50%;
+    max-width: 450px;
+    text-align: left;
+  }
+  .right-col {
+    width: 45%;
+    align-self: center;
+    justify-self: end;
+  }
+
+  .about-us,
+  .newsletter {
+    width: 30%;
+  }
+
+  .social {
+    width: 20%;
   }
 }

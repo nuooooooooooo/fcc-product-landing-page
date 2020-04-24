@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Solmer</title>
   </head>
   <body>
@@ -49,6 +53,7 @@
         </div>
       </div>
     </section>
+
     <main>
       <section id="s2" class="features">
         <div class="container">
@@ -87,99 +92,116 @@
           </div>
         </div>
       </section>
-      <section id="s3" class="price-grid">
-        <h2>Our Products</h2>
-        <div class="price-grid-one card">
-          <img class="card__img" src="images/kindpng_521804.png" alt="" />
-          <div class="wrapper">
-            <h3>Alto SX-350</h3>
-            <p>3500€</p>
-          </div>
-          <button class="card__btn">Add to cart</button>
-        </div>
-        <div class="price-grid-two card">
-          <img class="card__img" src="images/case.jpg" alt="" />
-          <div class="wrapper">
-            <h3>SX Series Case</h3>
-            <p>250€</p>
-          </div>
-          <button class="card__btn">Add to cart</button>
-        </div>
-        <div class="price-grid-three card">
-          <img class="card__img" src="images/mouthpiece.png" alt="" />
 
-          <div class="wrapper">
-            <h3>Mouthpiece</h3>
-            <p>350€</p>
+      <section id="s3">
+        <h2 class="our-products">Our Products</h2>
+        <div class="price-grid">
+          <div class="price-grid-one card">
+            <img class="card__img" src="images/kindpng_521804.png" alt="" />
+            <div class="card__text">
+              <h3>Alto SX-350</h3>
+              <p>3500€</p>
+            </div>
+            <button class="card__btn">Add to cart</button>
           </div>
-          <button class="card__btn">Add to cart</button>
-        </div>
-        <div class="price-grid-four card">
-          <img class="card__img" src="images/reed.jpg"" alt="" />
-          <div class="wrapper">
-            <h3>Tenor Sax Reed</h3>
-            <p>25€</p>
+          <div class="price-grid-two card">
+            <img class="card__img" src="images/case.jpg" alt="" />
+            <div class="card__text">
+              <h3>SX Series Case</h3>
+              <p>250€</p>
+            </div>
+            <button class="card__btn">Add to cart</button>
           </div>
-          <button class="card__btn">Add to cart</button>
-        </div>
-        <div class="price-grid-five card">
-          <img class="card__img" src="images/shoulder-strap.png" alt="" />
-          <div class="wrapper">
-            <h3>LightTech&#8482; Shoulder strap</h3>
-            <p>50€</p>
+          <div class="price-grid-three card">
+            <img class="card__img" src="images/mouthpiece.png" alt="" />
+            <div class="card__text">
+              <h3>Mouthpiece</h3>
+              <p>350€</p>
+            </div>
+            <button class="card__btn">Add to cart</button>
           </div>
-          <button class="card__btn">Add to cart</button>
-        </div>
-        <div class="price-grid-six card">
-          <img class="card__img" src="images/cleaning-cloth.jpg" alt="" />
-          <div class="wrapper">
-            <h3>CleanTech&#8482; Cleaning Cloth</h3>
-            <p>15€</p>
+          <div class="price-grid-four card">
+            <img class="card__img" src="images/reed.jpg"" alt="" />
+            <div class="card__text">
+              <h3>Tenor Sax Reed</h3>
+              <p>25€</p>
+            </div>
+            <button class="card__btn">Add to cart</button>
           </div>
-          <button class="card__btn">Add to cart</button>
+          <div class="price-grid-five card">
+            <img class="card__img" src="images/shoulder-strap.png" alt="" />
+            <div class="card__text">
+              <h3>LightTech&#8482; Shoulder strap</h3>
+              <p>50€</p>
+            </div>
+            <button class="card__btn">Add to cart</button>
+          </div>
+          <div class="price-grid-six card">
+            <img class="card__img" src="images/cleaning-cloth.jpg" alt="" />
+            <div class="card__text">
+              <h3>CleanTech&#8482; Cleaning Cloth</h3>
+              <p>15€</p>
+            </div>
+            <button class="card__btn">Add to cart</button>
+          </div>
         </div>
       </section>
     </main>
+
     <footer class="footer">
-      <div class="container">
-        <div class="three-col">
-          <div class="about-us">
-            <h3>About Us</h3>
-            <p>
-              We're a fake saxophone company that was totally made up for a
-              FreeCodeCamp.org product landing project. Our brand name was
-              inspired by famous saxophone brand Selmer.
-            </p>
-          </div>
-          <div class="newsletter">
-            <form id="form" action="https://www.freecodecamp.com/email-submit">
-              <label for="email"> <h3>Newsletter</h3> </label>
-              <div class="newsl-container">
+      <div class="three-col container">
+        <div class="about-us three-col--margin">
+          <h3>About Us</h3>
+          <p>
+            We're a fake saxophone company that was totally made up for a
+            FreeCodeCamp.org product landing project. Our brand name was
+            inspired by famous saxophone brand Selmer.
+          </p>
+        </div>
+        <div class="newsletter three-col--margin">
+          <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <label for="email"> <h3>Newsletter</h3> </label>
+            <div class="newsl-container">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Write your email here"
+              />
+              <button class="form-btn" type="reset">
                 <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Write your email here"
+                  class="form-btn__content"
+                  type="submit"
+                  id="submit"
+                  value="&#187;"
                 />
-                <button class="form-btn" type="reset">
-                  <input
-                    class="form-btn__content"
-                    type="submit"
-                    id="submit"
-                    value="&#187;"
-                  />
-                </button>
-              </div>
-            </form>
-          </div>
-          <div class="social">
-            <h3>
-              Follow Us
-            </h3>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="social three-col--margin">
+          <h3>
+            Follow Us
+          </h3>
+          <div class="icon-container">
+            <a href="https://twitter.com/partimecat" target="_blank"
+              ><i class="fa fa-twitter icon"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/manon-locht/" target="_blank"
+              ><i class="fa fa-linkedin icon"></i
+            ></a>
+            <a href="https://github.com/web-Nuo" target="_blank"
+              ><i class="fa fa-github icon"></i
+            ></a>
+            <a
+              href="https://www.freecodecamp.org/fccea878291-2387-41c1-9516-504172fd1078"
+              target="_blank"
+              ><i class="fa fa-free-code-camp icon"></i
+            ></a>
           </div>
         </div>
-        <p>Coded by <a href="" target="_blank">Manon</a></p>
       </div>
+      <p class="page-author">Coded by <a href="" target="_blank">Manon</a></p>
     </footer>
     <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
   </body>
