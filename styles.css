@@ -109,7 +109,6 @@ h2 {
 }
 
 .hero-content__text {
-  flex-direction: column;
   width: 70%;
   max-width: 900px;
   margin: auto;
